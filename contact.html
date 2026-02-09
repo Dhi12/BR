@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#d4af37;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#f7f7f5;
+  color:#333;
+}
+
+/* Container */
+.container{
+  max-width:820px;
+  margin:80px auto;
+  background:#ffffff;
+  padding:60px;
+  border:1px solid #e5e5e5;
+}
+
+/* Title */
+h2{
+  font-family:'Playfair Display',serif;
+  text-align:center;
+  font-size:38px;
+  margin-bottom:10px;
+  color:#111;
+}
+
+.subtitle{
+  text-align:center;
+  margin-bottom:40px;
+  color:#777;
+}
+
+/* Inputs */
+input, textarea, select{
+  width:100%;
+  padding:16px;
+  margin-bottom:18px;
+  border:1px solid #ddd;
+  font-size:15px;
+}
+
+textarea{
+  height:140px;
+}
+
+/* Button */
+button{
+  width:100%;
+  padding:18px;
+  background:#000;
+  color:#fff;
+  border:1px solid #000;
+  font-size:14px;
+  letter-spacing:2px;
+  cursor:pointer;
+  transition:all .35s ease;
+}
+
+button:hover{
+  background:#d4af37;
+  color:#000;
+  border-color:#d4af37;
+}
+
+input, textarea, select{
+  width:100%;
+  padding:16px;
+  margin-bottom:18px;
+  border:1px solid #e3e3e3;
+  font-size:15px;
+  transition:.25s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  outline:none;
+  border-color:#d4af37;
+  box-shadow:0 0 0 1px rgba(212,175,55,0.25);
+}
+
+.whatsapp-btn{
+  display:block;
+  text-align:center;
+  margin-top:14px;
+  padding:16px;
+  border:1px solid #d4af37;
+  color:#d4af37;
+  text-decoration:none;
+  letter-spacing:1.5px;
+  transition:.35s;
+}
+
+.whatsapp-btn:hover{
+  background:#d4af37;
+  color:#000;
+}
+
+/* HEADER */
+header{
+  padding:18px 60px;
+  background:#EAEAEA;
+  position:sticky;
+  top:0;
+  z-index:100;
+  border-bottom:1px solid rgba(212,175,55,0.17);
+}
+
+nav{display:flex;justify-content:space-between;align-items:center;}
+
+.logo{
+  font-family:'Alex Brush',cursive;
+  font-size:46px;
+  color:#d4af37;
+  text-decoration: none;
+}
+
+nav ul{display:flex;gap:30px;list-style:none;}
+nav ul li{font-size:18px;color:#d4af37;cursor:pointer;}
+nav ul li:hover{color:var(--gold);}
+nav ul li a{
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover{
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="index.html" class="logo">Bharathi Granites</a>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="exports.html">Exports</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Request a Quote</h2>
+<p class="subtitle">Premium Indian Black Granite Supply — Global Export</p>
+
+<form action="https://formsubmit.co/info@bharathigranites.com" method="POST">
+
+<input type="text" name="First Name" placeholder="First Name" required>
+<input type="text" name="Last Name" placeholder="Last Name" required>
+<input type="email" name="Email" placeholder="Email Address" required>
+
+<select name="Product Interest">
+  <option>Product Interested</option>
+  <option>Black Granite Tiles</option>
+  <option>Granite Thresholds</option>
+  <option>Custom Cut Sizes</option>
+  <option>Granite Slabs</option>
+</select>
+
+<input type="text" name="Country" placeholder="Country">
+<input type="text" name="City" placeholder="City">
+
+<textarea name="Message" placeholder="Project details, required sizes, thickness, finish, quantity, destination port..."></textarea>
+
+<button type="submit">SUBMIT REQUEST</button>
+
+<a href="https://wa.me/+12054926798" class="whatsapp-btn" target="_blank">
+  Request via WhatsApp
+</a>
+</form>
+
+</div>
+
+</body>
+</html>
